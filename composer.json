@@ -35,7 +35,7 @@
         "stan:baseline": "./vendor/bin/phpstan analyse --memory-limit=2G --configuration=phpstan.neon --generate-baseline",
         "rector": "./vendor/bin/rector process --dry-run",
         "rector:fix": "./vendor/bin/rector process",
-        "test": "phpunit tests/"
+        "test": "phpunit tests/ --testdox"
     },
     "config": {
         "allow-plugins": {

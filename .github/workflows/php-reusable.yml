@@ -31,9 +31,14 @@ jobs:
           php_version: ${{ inputs.php_version }}
           COMPOSER_TOKEN: ${{ secrets.COMPOSER_TOKEN }}
 
+      # Build Phase
+      - name: Install PHP dependencies
+        working-directory: .
+        run: composer install
+
       # Testing Phase
       - name: Run php tests
-        run: composer test
+        run: vendor/bin/phpunit tests --testdox
 
       # Code Quality Checks
       - name: Run codesniffer checks
