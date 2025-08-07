@@ -53,6 +53,10 @@ runs:
         key: ${{ runner.os }}-php-${{ inputs.php_version }}-${{ hashFiles('**/composer.lock') }}
         restore-keys: ${{ runner.os }}-php-${{ inputs.php_version }}-
 
+    - name: Install Phing
+      shell: bash
+      run: composer global require phing/phing:^2.17
+
     - name: Install PHP dependencies
       shell: bash
       run: composer install --prefer-dist --no-progress --no-interaction

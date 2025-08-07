@@ -14,7 +14,7 @@ permissions:
 
 jobs:
   php-quality-checks:
-    name: 'PHP ${{ inputs.php_version }} Quality & Testing'
+    name: 'Quality & Testing'
     timeout-minutes: 60
     runs-on: ubuntu-latest-2-core
 
