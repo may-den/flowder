@@ -1,0 +1,25 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Method Imjoehaines\\Flowder\\Loader\\CachingLoader\:\:load\(\) return type has no value type specified in iterable type iterable\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Loader/CachingLoader.php
+
+		-
+			message: '#^Property Imjoehaines\\Flowder\\Loader\\CachingLoader\:\:\$cache type has no value type specified in iterable type iterable\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Loader/CachingLoader.php
+
+		-
+			message: '#^Method Imjoehaines\\Flowder\\Loader\\DirectoryLoader\:\:load\(\) return type has no value type specified in iterable type iterable\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Loader/DirectoryLoader.php
+
+		-
+			message: '#^Method Imjoehaines\\Flowder\\Loader\\PhpFileLoader\:\:load\(\) return type has no value type specified in iterable type iterable\.$#'
+			identifier: missingType.iterableValue
+			count: 1
+			path: src/Loader/PhpFileLoader.php
