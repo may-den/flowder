@@ -5,8 +5,7 @@ name: Hello World Workflow
 on:
   # Trigger the workflow on push events for any branch.
   push:
-    branches:
-      - master
+    branches: [ master, develop ]
 
   # Allows you to run this workflow manually from the Actions tab on GitHub.
   workflow_dispatch:
