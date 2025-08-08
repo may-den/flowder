@@ -1,5 +1,5 @@
 {
-    "name": "imjoehaines/flowder",
+    "name": "may-den/flowder",
     "description": "A simple and extensible fixture loader for PHP 7.3+, supporting SQLite and MySQL",
     "keywords": [
         "fixtures",
@@ -8,7 +8,7 @@
         "sqlite",
         "testing"
     ],
-    "homepage": "https://github.com/imjoehaines/flowder",
+    "homepage": "https://github.com/may-den/flowder",
     "license": "Unlicense",
     "suggest": {
         "imjoehaines/flowdception": "Support for Flowder in Codeception test suites",
